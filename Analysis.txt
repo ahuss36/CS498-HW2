@@ -1,0 +1,17 @@
+Part A:
+http://35.188.222.116:8080/register
+633.0197334289551
+http://35.195.182.100:8080/register
+1061.1236095428467
+http://35.188.222.116:8080/list
+87.62602806091309
+http://35.195.182.100:8080/list
+402.81620025634766
+
+we can see that the US instance has lower average latencies than the EU one, mainly due to the distance between where I am accessing them from. Since I ran this from the US, the pings are going to be much quicker to the US servers. Also the /list endpoints are faster due to the /register endpoints needing more overhead which increases their latency
+
+Part B:
+not found #:0
+
+This means that even with all the latency between the US and EU servers, the databases were still faster in maintaining consistency compared to us sending requests. It shows that it will still maintain consistency no matter where you are in the world.
+
